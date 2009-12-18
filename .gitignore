@@ -1,0 +1,19 @@
+#this file set untrack files
+.svn
+CVS
+.git
+
+*~
+\#*\#
+
+*.log
+*.elc
+
+#original addons 
+addons/cc-mode/
+addons/cedet/
+addons/color-theme/
+addons/completion-ui/
+addons/ecb/
+addons/sams/
+addons/yasnippet/

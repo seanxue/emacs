@@ -1,0 +1,3 @@
+These are my Emacs configurations and add-ons 
+To use this project, adding the following line to your .emacs file in your home directory
+(load "/your/project/path/.emacs")

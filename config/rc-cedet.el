@@ -22,6 +22,42 @@
 (require 'semanticdb-global)
 (semanticdb-enable-gnu-global-databases 'c-mode)
 (semanticdb-enable-gnu-global-databases 'c++-mode)
+;; enable ctags for some languages:
+;;  Unix Shell, Perl, Pascal, Tcl, Fortran, Asm
+(semantic-load-enable-primary-exuberent-ctags-support)
+
+;;Semantic的检索范围
+(setq semanticdb-project-roots 
+	  (list
+        (expand-file-name "/")))
+
+(defun sean/indent-or-complete ()
+   (interactive)
+   (if (looking-at "\\>")
+ 	  (hippie-expand nil)
+ 	  (indent-for-tab-command))
+ )
+
+(global-set-key [(control tab)] 'sean/indent-or-complete) ;补全的全局热键
+
+(autoload 'senator-try-expand-semantic "senator")
+
+(setq hippie-expand-try-functions-list
+ 	  '(
+		senator-try-expand-semantic
+		try-expand-dabbrev
+		try-expand-dabbrev-visible
+		try-expand-dabbrev-all-buffers
+		try-expand-dabbrev-from-kill
+		try-expand-list
+		try-expand-list-all-buffers
+		try-expand-line
+        try-expand-line-all-buffers
+        try-complete-file-name-partially
+        try-complete-file-name
+        try-expand-whole-kill
+        )
+)
 
 ;; enable ctags for some languages:
 ;;  Unix Shell, Perl, Pascal, Tcl, Fortran, Asm

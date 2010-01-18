@@ -6,6 +6,7 @@
 (load "~/pro/emacs/config/rc-linum.el")
 (load "~/pro/emacs/config/rc-dired.el")
 (load "~/pro/emacs/config/rc-multi-term.el")
+(load "~/pro/emacs/config/rc-shell.el")
 ;; Programming tools & languages
 (load "~/pro/emacs/config/rc-ccmode.el")
 (load "~/pro/emacs/config/rc-cedet.el")

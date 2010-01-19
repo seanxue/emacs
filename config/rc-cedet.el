@@ -59,6 +59,10 @@
         )
 )
 
+;; enable ctags for some languages:
+;;  Unix Shell, Perl, Pascal, Tcl, Fortran, Asm
+(semantic-load-enable-primary-exuberent-ctags-support)
+
 ;;=== Key Bingdings ===
 ;;Semantic key bindings 
 (defun sean/cedet-hook ()

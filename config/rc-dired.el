@@ -12,3 +12,5 @@
 	  (lambda()
 	    (dired-omit-mode 1)
 	    ))
+
+(setq dired-listing-switches "-alhF")

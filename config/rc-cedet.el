@@ -4,7 +4,8 @@
 (global-ede-mode t) ;to use projects
 
 ;;=== Semantic Settings ===
-(semantic-load-enable-excessive-code-helpers) ;Semantic features level
+(semantic-load-enable-gaudy-code-helpers) ;Semantic features gaudy code helper, replace excessive code helper level
+; (semantic-load-enable-excessive-code-helpers) ;Semantic features level
 ; (semantic-load-enable-semantic-debugging-helpers) ;enables several modes,that are useful for debugging Semantic
 (require 'semantic-ia) ;names completion, and displaying of information for tags & classes
 (require 'semantic-gcc) ;gcc head files

@@ -92,7 +92,7 @@
 ;----------------------------------------------------------------------
 ;                                    F5
 ;----------------------------------------------------------------------
-(global-set-key [(f5)] 'sams-cm-rotate)
+(global-set-key [(f5)] 'compile)
 (global-set-key [(shift f5)] 'sams-cm-save-point)
 (global-set-key [(control f5)] 'font-lock-fontify-buffer)
 (global-set-key [(meta f5)] 'sams-unbound-key)
